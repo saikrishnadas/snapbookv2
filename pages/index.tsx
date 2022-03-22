@@ -5,7 +5,7 @@ import Feed from '../components/Feed'
 
 const Home: NextPage = () => {
   return (
-    <div className="">
+    <div className="scrollbar-hide h-screen overflow-y-scroll bg-gray-50">
       <Head>
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
