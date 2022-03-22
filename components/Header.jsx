@@ -6,12 +6,13 @@ import {
   HeartIcon,
   PaperAirplaneIcon,
   MenuIcon,
+  HomeIcon,
 } from '@heroicons/react/outline'
 
 function Header() {
   return (
-    <div>
-      <div className="flex max-w-6xl justify-between">
+    <div className="top-0 z-50 border-b bg-white shadow-sm">
+      <div className="mx-5 flex max-w-6xl justify-between xl:mx-auto">
         <div className="relative hidden w-24 cursor-pointer lg:inline-grid">
           <Image
             src="https://links.papareact.com/ocw"
@@ -38,6 +39,22 @@ function Header() {
               placeholder="Search"
             />
           </div>
+        </div>
+
+        <div className="flex items-center justify-end space-x-4">
+          <HomeIcon className="navBtn" />
+          <MenuIcon className="h-10 w-10 cursor-pointer md:hidden" />
+          <div className="navBtn relative">
+            <PaperAirplaneIcon className="navBtn rotate-45" />
+            <div className="absolute -top-2 -right-2 flex h-5 w-5 animate-pulse items-center justify-center rounded-full bg-red-500 text-sm text-white">
+              3
+            </div>
+          </div>
+          <PlusCircleIcon className="navBtn" />
+          <UserGroupIcon className="navBtn" />
+          <HeartIcon className="navBtn" />
+
+          <img src="" alt="" className="h-10 cursor-pointer rounded-full" />
         </div>
       </div>
     </div>
