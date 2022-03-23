@@ -5,11 +5,9 @@ import { getProviders, signIn as signIntoProvider } from 'next-auth/react'
 function signIn() {
   const [providers, setProviders] = useState(null)
 
-  useEffect(() => {
-    ;(async () => {
-      const res = await getProviders()
-      setProviders(res)
-    })()
+  useEffect(async () => {
+    const res = await getProviders()
+    setProviders(res)
   }, [])
   return (
     <>

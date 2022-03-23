@@ -10,10 +10,13 @@ import {
 } from '@heroicons/react/outline'
 import { useSession, signOut, signIn } from 'next-auth/react'
 import { useRouter } from 'next/router'
+import { useContext } from 'react'
+import ModalContext from '../ModalContext'
 
 function Header() {
   const { data: session } = useSession()
   const router = useRouter()
+  const { open, openModal, closeModal } = useContext(ModalContext)
 
   console.log(session)
   return (
@@ -65,7 +68,7 @@ function Header() {
                   3
                 </div>
               </div>
-              <PlusCircleIcon className="navBtn" />
+              <PlusCircleIcon className="navBtn" onClick={() => openModal()} />
               <UserGroupIcon className="navBtn" />
               <HeartIcon className="navBtn" />
               <img
