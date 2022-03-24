@@ -10,7 +10,7 @@ export default NextAuth({
     }),
     // ...add more providers here
   ],
-
+secret: process.env.NEXT_PUBLIC_SECRET,
   //   theme:{
   //       logo:"https://links.papareact.com/sq0",
   //       brandColor: "#F13287",
