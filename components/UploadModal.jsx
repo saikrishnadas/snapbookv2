@@ -50,7 +50,6 @@ function UploadModal() {
 
     //Upload the image to firebase storage with the post ID
     const imageRef = ref(storage, `posts/${docRef.id}/image`)
-    console.log(imageRef)
 
     await uploadString(imageRef, selectedFile, 'data_url').then(
       async (snapshot) => {
