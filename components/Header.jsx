@@ -14,6 +14,8 @@ import { useContext } from 'react'
 import ModalContext from '../ModalContext'
 import snapbookImg from '../public/snapbook.png'
 import logo from '../public/logo.svg'
+import 'antd/dist/antd.css'
+import { Menu, Dropdown, Button, Space } from 'antd'
 
 function Header() {
   const { data: session } = useSession()
@@ -21,6 +23,17 @@ function Header() {
   const { open, openModal, closeModal } = useContext(ModalContext)
 
   console.log(session)
+
+  const menu = (
+    <Menu>
+      <Menu.Item>
+        <div onClick={signOut} className="text-blue-500">
+          Logout
+        </div>
+      </Menu.Item>
+    </Menu>
+  )
+
   return (
     <div className="top-0 z-50 border-b bg-white shadow-sm">
       <div className="mx-5 flex max-w-6xl justify-between xl:mx-auto">
@@ -72,12 +85,14 @@ function Header() {
               <PlusCircleIcon className="navBtn" onClick={() => openModal()} />
               <UserGroupIcon className="navBtn" />
               <HeartIcon className="navBtn" />
-              <img
-                onClick={signOut}
-                src={session?.user?.image}
-                alt="profile picture"
-                className="h-10 w-10 cursor-pointer rounded-full"
-              />
+              <Dropdown overlay={menu} placement="bottomLeft">
+                <img
+                  // onClick={signOut}
+                  src={session?.user?.image}
+                  alt="profile picture"
+                  className="h-10 w-10 cursor-pointer rounded-full"
+                />
+              </Dropdown>
             </>
           ) : (
             <button onClick={signIn}>Sign In</button>
