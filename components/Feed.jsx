@@ -21,6 +21,9 @@ function Feed() {
           <div className="fixed top-20">
             <MiniProfile />
             <Suggestions />
+            <p className="ml-20 mt-10 font-bold">
+              Developed by Sai Krishna Das{' '}
+            </p>
           </div>
         </section>
       )}
