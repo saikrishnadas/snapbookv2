@@ -18,10 +18,10 @@ function Feed() {
       </section>
       {session && (
         <section className="hidden md:col-span-1 xl:inline-grid">
-          {/* <div className="fixed top-20"> */}
-          <MiniProfile />
-          <Suggestions />
-          {/* </div> */}
+          <div className="fixed top-20">
+            <MiniProfile />
+            <Suggestions />
+          </div>
         </section>
       )}
     </main>

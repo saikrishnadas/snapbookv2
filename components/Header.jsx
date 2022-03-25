@@ -72,7 +72,7 @@ function Header() {
 
         <div className="flex items-center justify-end space-x-4">
           <HomeIcon onClick={() => router.push('/')} className="navBtn" />
-          <MenuIcon className="h-10 w-10 cursor-pointer md:hidden" />
+          {/* <MenuIcon className="h-10 w-10 cursor-pointer md:hidden" /> */}
           {session ? (
             <>
               {' '}
@@ -82,7 +82,10 @@ function Header() {
                   3
                 </div>
               </div>
-              <PlusCircleIcon className="navBtn" onClick={() => openModal()} />
+              <PlusCircleIcon
+                className="h-6 cursor-pointer transition-all duration-150 ease-out hover:scale-125 md:inline-flex"
+                onClick={() => openModal()}
+              />
               <UserGroupIcon className="navBtn" />
               <HeartIcon className="navBtn" />
               <Dropdown overlay={menu} placement="bottomLeft">

@@ -11,12 +11,15 @@ function MiniProfile() {
         className="h-16 w-16 rounded-full border p-[2px]"
       />
 
-      <div className="mt-4 flex-1">
+      <div className="mt-4 ml-2 flex-1">
         <h2 className="font-bold">{session?.user?.username}</h2>
-        <h3 className="text-sm text-gray-400">Welcome to snapbook v2</h3>
+        <h3 className="text-sm text-gray-400">Welcome to Snapbook</h3>
       </div>
 
-      <button onClick={signOut} className="text-sm font-semibold text-blue-400">
+      <button
+        onClick={signOut}
+        className="ml-2 text-sm font-semibold text-blue-400"
+      >
         Sign Out
       </button>
     </div>

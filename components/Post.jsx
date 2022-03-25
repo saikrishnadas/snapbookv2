@@ -20,10 +20,11 @@ import {
 } from 'firebase/firestore'
 import { useSession } from 'next-auth/react'
 import { db } from '../firebase'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Moment from 'react-moment'
 
 function Post({ id, username, userImg, img, caption }) {
+  const inputRef = useRef(null)
   const { data: session } = useSession()
   const [comment, setComment] = useState('')
   const [comments, setComments] = useState([])
@@ -114,10 +115,13 @@ function Post({ id, username, userImg, img, caption }) {
               <HeartIcon className="btn" onClick={likePost} />
             )}
 
-            <ChatIcon className="btn" />
-            <PaperAirplaneIcon className="btn" />
+            <ChatIcon
+              className="btn"
+              onClick={() => inputRef.current && inputRef.current.focus()}
+            />
+            {/* <PaperAirplaneIcon className="btn" /> */}
           </div>
-          <BookmarkIcon className="btn" />
+          {/* <BookmarkIcon className="btn" /> */}
         </div>
       )}
 
@@ -159,6 +163,7 @@ function Post({ id, username, userImg, img, caption }) {
             placeholder="add a comment..."
             type="text"
             value={comment}
+            ref={inputRef}
             onChange={(e) => setComment(e.target.value)}
           />
           <button
