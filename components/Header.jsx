@@ -77,7 +77,7 @@ function Header() {
             <>
               {' '}
               <div className="navBtn relative">
-                <PaperAirplaneIcon className="navBtn rotate-45" />
+                <UserGroupIcon className="navBtn" />
                 <div className="absolute -top-2 -right-2 flex h-5 w-5 animate-pulse items-center justify-center rounded-full bg-red-500 text-sm text-white">
                   3
                 </div>
@@ -86,8 +86,8 @@ function Header() {
                 className="h-6 cursor-pointer transition-all duration-150 ease-out hover:scale-125 md:inline-flex"
                 onClick={() => openModal()}
               />
-              <UserGroupIcon className="navBtn" />
-              <HeartIcon className="navBtn" />
+              {/* <UserGroupIcon className="navBtn" /> */}
+              {/* <HeartIcon className="navBtn" /> */}
               <Dropdown overlay={menu} placement="bottomLeft">
                 <img
                   // onClick={signOut}

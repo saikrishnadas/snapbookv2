@@ -20,7 +20,7 @@ function MiniProfile() {
         onClick={signOut}
         className="ml-2 text-sm font-semibold text-blue-400"
       >
-        Sign Out
+        Logout
       </button>
     </div>
   )

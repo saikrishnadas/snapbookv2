@@ -27,27 +27,27 @@ function signIn() {
             <div className="h-14" />
             <div className="rounded-lg border-2 border-[#E65C64] p-10 shadow-lg">
               <h1 className="text-2xl font-semibold">Create account</h1>
-              <div class="mb-6 mt-10 md:items-center">
+              <div className="mb-6 mt-10 md:items-center">
                 <form>
-                  <div class="md:w-52">
+                  <div className="md:w-52">
                     <input
-                      class="w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 py-2 px-4 leading-tight text-gray-700 focus:border-[#E65C64] focus:bg-white focus:outline-none"
+                      className="w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 py-2 px-4 leading-tight text-gray-700 focus:border-[#E65C64] focus:bg-white focus:outline-none"
                       id="inline-full-name"
                       type="text"
                       placeholder="Enter a username"
                     />
                   </div>
-                  <div class="mt-5 md:w-52">
+                  <div className="mt-5 md:w-52">
                     <input
-                      class="w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 py-2 px-4 leading-tight text-gray-700 focus:border-[#E65C64] focus:bg-white focus:outline-none"
+                      className="w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 py-2 px-4 leading-tight text-gray-700 focus:border-[#E65C64] focus:bg-white focus:outline-none"
                       id="inline-full-name"
                       type="text"
                       placeholder="Enter a email"
                     />
                   </div>
-                  <div class="mt-5 md:w-52">
+                  <div className="mt-5 md:w-52">
                     <input
-                      class="w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 py-2 px-4 leading-tight text-gray-700 focus:border-[#E65C64] focus:bg-white focus:outline-none"
+                      className="w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 py-2 px-4 leading-tight text-gray-700 focus:border-[#E65C64] focus:bg-white focus:outline-none"
                       id="inline-full-name"
                       type="text"
                       placeholder="Enter a password"
@@ -91,19 +91,19 @@ function signIn() {
                   ))}
               </div>
               <h1 className="">or sign in with your username</h1>
-              <div class="mb-6 mt-10 md:items-center">
+              <div className="mb-6 mt-10 md:items-center">
                 <form>
-                  <div class="md:w-52">
+                  <div className="md:w-52">
                     <input
-                      class="w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 py-2 px-4 leading-tight text-gray-700 focus:border-[#E65C64] focus:bg-white focus:outline-none"
+                      className="w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 py-2 px-4 leading-tight text-gray-700 focus:border-[#E65C64] focus:bg-white focus:outline-none"
                       id="inline-full-name"
                       type="text"
                       placeholder="username"
                     />
                   </div>
-                  <div class="mt-5 md:w-52">
+                  <div className="mt-5 md:w-52">
                     <input
-                      class="w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 py-2 px-4 leading-tight text-gray-700 focus:border-[#E65C64] focus:bg-white focus:outline-none"
+                      className="w-full appearance-none rounded border-2 border-gray-200 bg-gray-200 py-2 px-4 leading-tight text-gray-700 focus:border-[#E65C64] focus:bg-white focus:outline-none"
                       id="inline-full-name"
                       type="text"
                       placeholder="password"
