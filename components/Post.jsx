@@ -18,7 +18,7 @@ import {
   doc,
   deleteDoc,
 } from 'firebase/firestore'
-import { useSession } from 'next-auth/react'
+import { useSession, signIn } from 'next-auth/react'
 import { db } from '../firebase'
 import { useState, useEffect, useRef } from 'react'
 import Moment from 'react-moment'
@@ -155,7 +155,7 @@ function Post({ id, username, userImg, img, caption }) {
         </div>
       )}
 
-      {session && (
+      {session ? (
         <form className="flex items-center p-4">
           <EmojiHappyIcon className="h-7" />
           <input
@@ -173,6 +173,22 @@ function Post({ id, username, userImg, img, caption }) {
             className="font-semibold text-blue-400"
           >
             Post
+          </button>
+        </form>
+      ) : (
+        <form className="flex items-center p-4">
+          <EmojiHappyIcon className="h-7" />
+          <input
+            disabled={true}
+            className="w-60 border-none outline-none focus:ring-0"
+            placeholder="Login to Like and Comment"
+            type="text"
+          />
+          <button
+            onClick={signIn}
+            className="font-semibold text-blue-500 underline hover:text-blue-700"
+          >
+            Login
           </button>
         </form>
       )}
