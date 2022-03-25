@@ -12,6 +12,8 @@ import { useSession, signOut, signIn } from 'next-auth/react'
 import { useRouter } from 'next/router'
 import { useContext } from 'react'
 import ModalContext from '../ModalContext'
+import snapbookImg from '../public/snapbook.png'
+import logo from '../public/logo.svg'
 
 function Header() {
   const { data: session } = useSession()
@@ -23,24 +25,23 @@ function Header() {
     <div className="top-0 z-50 border-b bg-white shadow-sm">
       <div className="mx-5 flex max-w-6xl justify-between xl:mx-auto">
         <div
-          className="relative hidden w-24 cursor-pointer lg:inline-grid"
+          className="relative hidden w-40 cursor-pointer text-xl lg:inline-grid"
           onClick={() => router.push('/')}
         >
-          <Image
-            src="https://links.papareact.com/ocw"
-            layout="fill"
-            objectFit="contain"
-          />
+          <div
+            className="relative mt-1 hidden h-14 w-20 cursor-pointer text-xl lg:inline-grid"
+            onClick={() => router.push('/')}
+          >
+            <Image src={logo.src} layout="fill" objectFit="contain" />
+          </div>
+
+          <Image src={snapbookImg.src} layout="fill" objectFit="cover" />
         </div>
         <div
           onClick={() => router.push('/')}
           className="relative w-10 flex-shrink-0 cursor-pointer lg:hidden"
         >
-          <Image
-            src="https://links.papareact.com/jjm"
-            layout="fill"
-            objectFit="contain"
-          />
+          <Image src={logo.src} layout="fill" objectFit="contain" />
         </div>
 
         <div className="max-w-xs">

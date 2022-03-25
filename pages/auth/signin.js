@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Header from '../../components/Header.jsx'
 import { getProviders, signIn as signIntoProvider } from 'next-auth/react'
+import logo from '../../public/signinlogo.svg'
 
 function signIn() {
   const [providers, setProviders] = useState(null)
@@ -12,9 +13,8 @@ function signIn() {
   return (
     <>
       <Header />
-      <div className="-mt-56 flex min-h-screen flex-col items-center justify-center py-2 px-14 text-center">
-        <img src="https://links.papareact.com/ocw" alt="" className="w-80" />
-        <p className="font-xs italic">For Education purpose</p>
+      <div className="relative -mt-56 flex min-h-screen flex-col items-center justify-center py-2 px-14 text-center">
+        <img src={logo.src} alt="" className="absolute w-64" />
         <div className="mt-40">
           {providers &&
             Object.values(providers).map((provider) => (

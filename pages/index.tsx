@@ -11,7 +11,7 @@ const Home: NextPage = () => {
   return (
     <div className="h-screen overflow-y-scroll bg-gray-50 scrollbar-hide">
       <Head>
-        <title>Create Next App</title>
+        <title>Snapbook</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {open && <UploadModal />}
