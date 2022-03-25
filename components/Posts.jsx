@@ -44,18 +44,29 @@ function Posts() {
   }, [db])
 
   return (
-    <div>
-      {posts.map((post) => (
-        <Post
-          key={post.id}
-          id={post.id}
-          username={post.username}
-          userImg={post.profileImg}
-          img={post.image}
-          caption={post.caption}
-        />
-      ))}
-    </div>
+    <>
+      <div>
+        {posts.map((post) => (
+          <Post
+            key={post.id}
+            id={post.id}
+            username={post.username}
+            userImg={post.profileImg}
+            img={post.image}
+            caption={post.caption}
+          />
+        ))}
+      </div>
+      <p className="ml-20 mt-10 font-bold md:hidden">
+        Developed by{' '}
+        <span
+          className="cursor-pointer text-blue-500"
+          onClick={() => router.push('https://www.saikrishnadas.com/')}
+        >
+          Sai Krishna Das
+        </span>
+      </p>
+    </>
   )
 }
 
