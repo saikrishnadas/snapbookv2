@@ -1,1 +1,7 @@
-snapbookv2.vercel.app
+|............................|
+
+
+https://snapbookv2.vercel.app/
+
+
+|............................|
