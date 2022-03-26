@@ -11,7 +11,7 @@ Snapbook has a moderating content feature where any image that is offensive can'
 this platform is safer for childerns too. You could post images, like images and also comment your views on it.
 
 
-![App Screenshot](https://thestobookimages.s3.ap-south-1.amazonaws.com/frame.png)
+![App Screenshot](https://github.com/saikrishnadas/snapbookv2/blob/main/public/Frame%201.png)
 
 ## Live Demo
 
