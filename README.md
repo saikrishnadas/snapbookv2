@@ -3,7 +3,7 @@
 [![Version](https://img.shields.io/badge/version-1.0.0-green)](https://github.com/saikrishnadas/thestobook)
 [![Live App](https://img.shields.io/badge/demo-online-green)](https://thestobook.vercel.app/)
 
-![Logo](https://thestobookimages.s3.ap-south-1.amazonaws.com/Group+7+1.svg)
+![Logo](https://github.com/saikrishnadas/snapbookv2/blob/main/public/signinlogo.svg)
 
 **Snapbook** is a social media platform where you could share images and make friends.
 This is an updated version of snapbook (v2), unlike the old snapbook, this version has 
