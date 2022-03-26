@@ -1,10 +1,8 @@
 # Snapbook - A social media platform where you could share images and make friends
 
-[![Version](https://img.shields.io/badge/version-1.0.0-green)](https://github.com/saikrishnadas/thestobook)
-[![Live App](https://img.shields.io/badge/demo-online-green)](https://thestobook.vercel.app/)
-
+[![Version](https://img.shields.io/badge/version-2.0.0-green)](https://github.com/saikrishnadas/snapbookv2)
+[![Live App](https://img.shields.io/badge/demo-online-green)](https://snapbookv2.vercel.app/)
 ![Logo](https://github.com/saikrishnadas/snapbookv2/blob/main/public/signinlogo.svg)
-
 **Snapbook** is a social media platform where you could share images and make friends.
 This is an updated version of snapbook (v2), unlike the old snapbook, this version has 
 a updated user interface, better technology, more features and security. The data shared to
@@ -12,11 +10,12 @@ snapbook is highly secured as we user firebase storage system and next-auth to p
 Snapbook has a moderating content feature where any image that is offensive can't be posted. So that 
 this platform is safer for childerns too. You could post images, like images and also comment your views on it.
 
+
 ![App Screenshot](https://thestobookimages.s3.ap-south-1.amazonaws.com/frame.png)
 
 ## Live Demo
 
-https://thestobook.vercel.app/
+https://snapbookv2.vercel.app/
 
 ## Tech Stack
 
