@@ -30,7 +30,7 @@ function Suggestions() {
         >
           <img
             src={profile.avatar}
-            alt="profile avatar"
+            alt="profile image"
             className="h-10 w-10 rounded-full border p-[2px]"
           />
           <div className="ml-4 flex-1">
