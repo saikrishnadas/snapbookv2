@@ -123,7 +123,7 @@ function UploadModal() {
                       src={selectedFile}
                       className="w-full cursor-pointer object-contain"
                       onClick={() => setSelectedFile(null)}
-                      alt=""
+                      alt="selected image"
                     />
                   ) : (
                     <div

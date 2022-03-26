@@ -1,62 +1,21 @@
-# Snapbook - A social media platform where you could share images and make friends
+# Next.js + Tailwind CSS Example
 
-[![Version](https://img.shields.io/badge/version-2.0.0-green)](https://github.com/saikrishnadas/snapbookv2)
-[![Live App](https://img.shields.io/badge/demo-online-green)](https://snapbookv2.vercel.app/)
-![Logo](https://github.com/saikrishnadas/snapbookv2/blob/main/public/signinlogo.svg)
-**Snapbook** is a social media platform where you could share images and make friends.
-This is an updated version of snapbook (v2), unlike the old snapbook, this version has 
-a updated user interface, better technology, more features and security. The data shared to
-snapbook is highly secured as we user firebase storage system and next-auth to protect the user data.
-Snapbook has a moderating content feature where any image that is offensive can't be posted. So that 
-this platform is safer for childerns too. You could post images, like images and also comment your views on it.
+This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.0)](https://tailwindcss.com/blog/tailwindcss-v3) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
 
+## Deploy your own
 
-![App Screenshot](https://github.com/saikrishnadas/snapbookv2/blob/main/public/Frame%201.png)
+Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
 
-## Live Demo
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
 
-https://snapbookv2.vercel.app/
+## How to use
 
-## Tech Stack
+Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
 
-**UI Desgin Tool:** Figma
+```bash
+npx create-next-app --example with-tailwindcss with-tailwindcss-app
+# or
+yarn create next-app --example with-tailwindcss with-tailwindcss-app
+```
 
-**Frontend Frameworks:** React _v17.0.2_ , NextJS _v12.0.10_
-
-**State Management:** React Context API
-
-**CSS Framework:** TailwindCSS _v3.0.7_
-
-**UI Library:** Antd _v4.19.3_ (used for dropdown and simple UIs)
-
-**Others:** Heroicons _v.1.0.6_, Headless UI _v1.5.0_
-
-**Backend Frameworks:** Node _v14.17.1_, Severless NextJS _v12.0.10_
-
-**Database:** Firestore _v9.6.9_, **Storage:** Firebase Storage _v9_ 
-
-**Authentication:** Next-Auth _v4.1.2_
-
-## Optimizations
-
-This web application is SEO optimized and has a full score of 100 from lighthouse report.
-Most of the data is cached and optimized to run on different devices and to be super fast in retriving data and minimal navigation load.
-
-**Lighthouse Audits:**
-
-![Report](https://thestobookimages.s3.ap-south-1.amazonaws.com/Screenshot+2022-02-28+at+1.14.20+PM.png)
-
-## Support
-
-For support, email saikrishnadas666@gmail.com or message me in Linkedin.
-
-## Feedback
-
-If you have any feedback, please reach out to saikrishnadas666@gmail.com
-
-# Hi, I'm Sai Krishna Das! 👋
-
-## 🔗 Links
-
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://saikrishnadas.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sai-krishna-das/)
+Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).

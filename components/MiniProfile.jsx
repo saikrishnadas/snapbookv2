@@ -7,7 +7,7 @@ function MiniProfile() {
     <div className="mt-14 ml-10 flex items-center justify-between">
       <img
         src={session?.user?.image}
-        alt=""
+        alt="user image"
         className="h-16 w-16 rounded-full border p-[2px]"
       />
 

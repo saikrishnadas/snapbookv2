@@ -102,7 +102,7 @@ function Post({ id, username, userImg, img, caption }) {
         <p className="flex-1 font-bold">{username}</p>
         <DotsHorizontalIcon className="h-5" />
       </div>
-      <img src={img} className="w-full object-cover" alt="" />
+      <img src={img} className="w-full object-cover" alt="post image" />
       {session && (
         <div className="flex justify-between px-4 pt-4">
           <div className="flex space-x-4">
@@ -140,7 +140,7 @@ function Post({ id, username, userImg, img, caption }) {
               <img
                 className="h-7 rounded-full"
                 src={comment.profileImg}
-                alt=""
+                alt="profile image"
               />
               <p className="flex-1 text-sm">
                 <span className="mr-2 font-bold">{comment.username}</span>
