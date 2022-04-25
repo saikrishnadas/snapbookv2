@@ -42,6 +42,8 @@ https://snapbookv2.vercel.app/
 
 For support, email saikrishnadas666@gmail.com or message me in Linkedin.
 
+## Snapbook V1: https://snapbook-758f2.firebaseapp.com/
+
 ## Feedback
 
 If you have any feedback, please reach out to saikrishnadas666@gmail.com
